@@ -24,7 +24,7 @@ with open(file_path, 'rb') as f:
         # Segment each line and remove stopwords
         seg_list = jieba.cut(newline)
         res = [word for word in seg_list if word not in stopwords]
-        joined_res = ''.join(res)
+        joined_res = ' '.join(res)
         # print(seg_list)
         # res = [word for word in seg_list]
 

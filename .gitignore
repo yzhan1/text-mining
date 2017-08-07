@@ -1,3 +1,5 @@
 .idea/
 model/
 data/allType.txt
+data/matrix.txt.npy
+data/data.xlsx
