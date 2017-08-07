@@ -1,14 +1,10 @@
 import math
 import pprint
 
-title_hash = {}
-count_hash = {}
-num_of_words = 0
-num_of_docs = 0
+title_hash, count_hash, res = {}, {}, {}
+num_of_words, num_of_docs = 0, 0
 segmented_lst = []
-res = {}
-file = open('data/allType.txt', 'r').read()
-lst = file.splitlines()
+lst = open('data/allType.txt', 'r').read().splitlines()
 
 print('### Processing')
 for i, line in enumerate(lst):
